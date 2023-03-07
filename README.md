@@ -3,29 +3,29 @@ A UWP library that provides easy access to Microsoft's [Fluent System Icons](htt
 
 # Installation
 ## From NuGet
-In your app project, install the [`Fluent.Icons` NuGet package](https://nuget.org/packages/Fluent.Icons). (Note that it is currently a prerelease build, so if you are searching for it in the NuGet Package Manager, make sure you have "Include prerelease" checked.)
+In your app project, install the [`WinUI.System.Icons` NuGet package](https://nuget.org/packages/WinUI.System.Icons). (Note that it is currently a prerelease build, so if you are searching for it in the NuGet Package Manager, make sure you have "Include prerelease" checked.)
 You can install the latest version using the following command in the NuGet Package Manager:
 ```ps
-Install-Package Fluent.Icons
+Install-Package WinUI.System.Icons
 ```
 ### Build a package
 1. Build the solution in `Release` mode and `Any CPU`
-2. Open Command Prompt in the solution directory and run `nuget pack Fluent.Icons/Fluent.Icons.csproj -properties Configuration=Release`
-3. Go to the Package Manager Console and set the default project to FluentSystemTestApp. Then run `Install-Package "{repo_path}\FluentSystemIconsUWP\Fluent.Icons.{version}.nupkg"` (change `{repo_path}` to where the solution folder is and `{version}` to the package version).
+2. Open Command Prompt in the solution directory and run `nuget pack WinUI.System.Icons/WinUI.System.Icons.csproj -properties Configuration=Release`
+3. Go to the Package Manager Console and set the default project to FluentSystemTestApp. Then run `Install-Package "{repo_path}\FluentSystemIconsUWP\WinUI.System.Icons.{version}.nupkg"` (change `{repo_path}` to where the solution folder is and `{version}` to the package version).
 4. Test the package by deploying FluentSystemTestApp.proj
 
 ## Build from source
-1. Clone the repo
-2. Add a reference to `Fluent.Icons.csproj`. You don't need the other two projects to build it.
-3. Add `xmlns:fluent="using:Fluent.Icons"` to your pages.
+1. Clone the repo with submodules
+2. Add a reference to `WinUI.System.Icons.csproj`. You don't need the other two projects to build it.
+3. Add `xmlns:fluent="using:WinUI.System.Icons"` to your pages.
 
 # Examples
-The following examples assume that you have imported the `Fluent.Icons` namespace as follows.
+The following examples assume that you have imported the `WinUI.System.Icons` namespace as follows.
 ```xml
-xmlns:fluent="using:Fluent.Icons"
+xmlns:fluent="using:WinUI.System.Icons"
 ```
 ```cs
-using Fluent.Icons;
+using WinUI.System.Icons;
 ```
 
 ## Example A
