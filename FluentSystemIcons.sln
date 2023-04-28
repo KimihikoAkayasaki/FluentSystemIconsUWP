@@ -3,11 +3,11 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.6.33417.168
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WinUI.System.Icons", "WinUI.System.Icons\WinUI.System.Icons.csproj", "{D1131DB3-DCCD-4DBF-AB51-78FD279DC07F}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WinUI.Fluent.Icons", "WinUI.Fluent.Icons\WinUI.Fluent.Icons.csproj", "{D1131DB3-DCCD-4DBF-AB51-78FD279DC07F}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WinUI.System.Icons.Generator", "Winui.System.Icons.Generator\WinUI.System.Icons.Generator.csproj", "{BAE73654-F9B1-4AC4-A79A-DD6DE5B11119}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WinUI.Fluent.Icons.Generator", "Winui.Fluent.Icons.Generator\WinUI.Fluent.Icons.Generator.csproj", "{BAE73654-F9B1-4AC4-A79A-DD6DE5B11119}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IconsTest", "IconsTest\IconsTest.csproj", "{88ACFCD5-F424-46D9-8A4B-5A3292703D01}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "IconsTest", "IconsTest\IconsTest.csproj", "{88ACFCD5-F424-46D9-8A4B-5A3292703D01}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

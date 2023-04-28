@@ -1,14 +1,12 @@
 ﻿using Microsoft.UI.Xaml;
 using Microsoft.UI.Xaml.Controls;
 
-// The Templated Control item template is documented at https://go.microsoft.com/fwlink/?LinkId=234235
-
-namespace WinUI.System.Icons;
+namespace WinUI.Fluent.Icons;
 
 /// <summary>
-///     Represents an icon that uses a <see cref="FluentSymbol" /> for its content.
+///     Represents an icon source that uses a Fluent System Icon as its content.
 /// </summary>
-public sealed class FluentIconElement : PathIcon
+public class FluentIconSource : PathIconSource
 {
     /// <summary>
     ///     Identifies the <see cref="Symbol" /> property.
@@ -19,27 +17,18 @@ public sealed class FluentIconElement : PathIcon
     );
 
     /// <summary>
-    ///     Constructs an empty <see cref="FluentIconElement" />.
+    ///     Constructs an empty <see cref="FluentIconSource" />.
     /// </summary>
-    public FluentIconElement()
+    public FluentIconSource()
     {
     }
 
     /// <summary>
-    ///     Constructs a <see cref="FluentIconElement" /> displaying the specified symbol.
+    ///     Constructs an <see cref="IconSource" /> that uses a Fluent System Icon as its content.
     /// </summary>
-    /// <param name="symbol"></param>
-    public FluentIconElement(FluentSymbol symbol)
+    public FluentIconSource(FluentSymbol symbol)
     {
         Symbol = symbol;
-    }
-
-    /// <summary>
-    ///     Constructs a <see cref="FluentIconElement" /> with the specified source.
-    /// </summary>
-    public FluentIconElement(FluentIconSource source)
-    {
-        Data = source.Data;
     }
 
     /// <summary>
@@ -53,7 +42,7 @@ public sealed class FluentIconElement : PathIcon
 
     private static void OnSymbolChanged(DependencyObject d, DependencyPropertyChangedEventArgs e)
     {
-        if (d is FluentIconElement self && (e.NewValue is FluentSymbol || e.NewValue is int))
+        if (d is FluentIconSource self && (e.NewValue is FluentSymbol || e.NewValue is int))
             // Set internal Data to the Path from the look-up table
             self.Data = FluentSymbolIcon.GetPathData((FluentSymbol)e.NewValue);
     }
