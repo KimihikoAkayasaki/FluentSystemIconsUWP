@@ -35,6 +35,11 @@ internal static class FontData
                 new FileInfo(typeof(FontData).Assembly.Location).DirectoryName,
                 "Assets", "FluentSymbolIcons.json");
 
+            if (!File.Exists(resourcePath))
+                resourcePath = Path.Join( // If failed, try again
+                    new FileInfo(typeof(FontData).Assembly.Location).DirectoryName,
+                    "FluentSymbolIcons.json"); // Without \Assets\
+
             // If failed again, just give up
             if (!File.Exists(resourcePath)) return; // Just give up
 

@@ -9,9 +9,9 @@
         <ImplicitUsings>enable</ImplicitUsings>
         <GeneratePackageOnBuild>True</GeneratePackageOnBuild>
         <RootNamespace>WinUI.Fluent.Icons</RootNamespace>
-        <Title>Amethyst Device Plugin API (Contract)</Title>
+        <Title>Fluent Symbol Icons for WASDK Apps</Title>
         <FileVersion></FileVersion>
-        <Version>0.0.7</Version>
+        <Version>0.0.9</Version>
         <Platforms>x64</Platforms>
         <UseWinUI>true</UseWinUI>
     </PropertyGroup>
@@ -35,7 +35,7 @@
 
     <PropertyGroup>
         <PackageId>WinUI.Fluent.Icons</PackageId>
-        <Version>0.0.7</Version>
+        <Version>0.0.9</Version>
         <Authors>KimihikoAkayasaki</Authors>
         <Company>KimihikoAkayasaki</Company>
         <RepositoryUrl>https://github.com/KimihikoAkayasaki/WinUI.Fluent.Icons</RepositoryUrl>
